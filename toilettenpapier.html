@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function f()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("h").value);
+  numTwo = parseInt(document.getElementById("b").value);
+  sum = (numOne * numTwo)/10000;
+  document.getElementById("a").value = sum;
+}
+</script>
+<script>
+function p()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("r").value);
+  numTwo = parseInt(document.getElementById("bl").value);
+  sum = numOne * numTwo;
+  document.getElementById("ges").value = sum;
+}
+</script>
+<script>
+function gf()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("a").value);
+  numTwo = parseInt(document.getElementById("ges").value);
+  sum = numOne * numTwo;
+  document.getElementById("fg").value = sum;
+}
+</script>
+<script>
+function pf()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("pr").value);
+  numTwo = parseInt(document.getElementById("fg").value);
+  sum = numOne / numTwo;
+  document.getElementById("ppm").value = sum;
+}
+</script>
+</head>
+<body>
+<h1>Fläche von einem Blatt</h1>
+<p>Höhe: <input id="h"> cm</p>
+<p>Breite: <input id="b"> cm</p>
+<button onclick="f()">Berechnen</button>
+<p>Fläche = <input id="a"> m²</p>
+<br><br>
+<h1>Anzahl an Blättern in einer Packung</h1>
+<p>Rollen: <input id="r"></p>
+<p>Blätter: <input id="bl"></p>
+<button onclick="p()">Berechnen</button>
+<p>Anzahl = <input id="ges"> Blätter</p>
+<br><br>
+<h1>Gesamtfläche</h1>
+<button onclick="gf()">Berechnen</button>
+<p>Gesamtfläche = <input id="fg"> m²</p>
+<br><br>
+<h1>Preis pro m²</h1>
+<p>Preis: <input id="pr"> €</p>
+<button onclick="pf();">Berechnen</button>
+<p><input id="ppm"> €</p>
+</body>
+</html>
