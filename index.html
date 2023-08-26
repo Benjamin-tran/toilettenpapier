@@ -27,7 +27,7 @@ function gf()
   var numOne, numTwo, sum;
   numOne = parseInt(document.getElementById("a").value);
   numTwo = parseInt(document.getElementById("ges").value);
-  sum = (numOne * numTwo)/10000;
+  sum = numOne * numTwo;
   document.getElementById("fg").value = sum;
 }
 </script>
@@ -57,9 +57,9 @@ function pf()
 <br><br>
 <h1>Gesamtfläche</h1>
 <button onclick="gf()">Berechnen</button>
-<p>Gesamtfläche = <input id="fg"> m²</p>
+<p>Gesamtfläche = <input id="fg"> cm²</p>
 <br><br>
-<h1>Preis pro m²</h1>
+<h1>Preis pro cm²</h1>
 <p>Preis: <input id="pr"> €</p>
 <button onclick="pf();">Berechnen</button>
 <p><input id="ppm"> €</p>
