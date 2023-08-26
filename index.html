@@ -7,7 +7,7 @@ function f()
   var numOne, numTwo, sum;
   numOne = parseInt(document.getElementById("h").value);
   numTwo = parseInt(document.getElementById("b").value);
-  sum = (numOne * numTwo)/10000;
+  sum = numOne * numTwo;
   document.getElementById("a").value = sum;
 }
 </script>
@@ -27,7 +27,7 @@ function gf()
   var numOne, numTwo, sum;
   numOne = parseInt(document.getElementById("a").value);
   numTwo = parseInt(document.getElementById("ges").value);
-  sum = numOne * numTwo;
+  sum = (numOne * numTwo)/10000;
   document.getElementById("fg").value = sum;
 }
 </script>
@@ -47,7 +47,7 @@ function pf()
 <p>Höhe: <input id="h"> cm</p>
 <p>Breite: <input id="b"> cm</p>
 <button onclick="f()">Berechnen</button>
-<p>Fläche = <input id="a"> m²</p>
+<p>Fläche = <input id="a"> cm²</p>
 <br><br>
 <h1>Anzahl an Blättern in einer Packung</h1>
 <p>Rollen: <input id="r"></p>
